@@ -1,0 +1,16 @@
+package com.huit.mx.securityBasic.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.huit.mx.securityBasic.dto.Greet;
+
+@RestController
+public class SecurityController {
+	
+	@RequestMapping("/")
+	Greet greet() {
+		return new Greet("Hello World!");
+	}
+
+}
